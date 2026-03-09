@@ -1,0 +1,53 @@
+.programs{
+    margin:80px auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 90%;
+    overflow-x: hidden;
+    
+
+}
+.program img{
+    width: 100%;
+    height: auto;
+    
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 10px;
+
+}
+.program{
+    flex-basis: 31%;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+.caption{
+    border: 10px;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(0,15,152,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    padding-top: 70%;
+}
+.caption img{
+    width:60px;
+    margin-bottom: 10px;
+
+}
+.program:hover .caption{
+    opacity: 1;
+}
